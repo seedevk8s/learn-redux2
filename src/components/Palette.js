@@ -22,7 +22,10 @@ const Palette = ({ selected, onSelect }) => {
               {
                   colors.map(color => (
                       <PaletteItem
-                        color={color} key={color} active={selected === color}
+                        color={color}
+                        key={color}
+                        active={selected === color}
+                        onClick={() => onSelect(color)}         // onClick 구현
                       />
                   ))
               }
