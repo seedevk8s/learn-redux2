@@ -14,7 +14,7 @@ const PaletteItem = ({ color, active, onClick}) => {
   ) ;
 };
 
-const Palette = ({ selected, onSelect }) => {
+const Palette = ({ selected, onSelect = f => f }) => {
   return (
       <div className="Palette">
           <h2>색깔을 골라 클릭!</h2>

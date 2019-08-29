@@ -12,7 +12,7 @@ class PaletteContainer extends Component {
 
     render() {
         const { color } = this.props;
-        return <Palette onSelect={this.handleSelect()} selected={color}/>;
+        return <Palette onSelect={() => this.handleSelect()} selected={color}/>;
     }
 }
 
